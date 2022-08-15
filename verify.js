@@ -40,10 +40,8 @@ switch (process.env.NETWORK) {
     etherscanApiUrl = 'https://api-goerli.etherscan.io'
     break
   case 'mainnet':
-    upgradeAddress = ''
-    etherscanApiUrl = ''
-    console.error('Mainnet contracts have not been deployed yet'.red)
-    process.exit()
+    upgradeAddress = '0xC680a22b4F03977f69b51A09f3Dbe922eb77C8FE'
+    etherscanApiUrl = 'https://api.etherscan.io'
     break
   default:
     console.error(`Invalid network ${process.env.NETWORK}`)
